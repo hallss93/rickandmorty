@@ -1,14 +1,21 @@
 import React from 'react';
-import {SafeAreaView, Text, View} from 'react-native';
+import {SafeAreaView, ScrollView, Text} from 'react-native';
 
-function App(): JSX.Element {
+import Header from './../../components/Header';
+
+import {Container} from './styles';
+
+function Home(): JSX.Element {
   return (
-    <SafeAreaView>
-      <View>
-        <Text>Hello Home</Text>
-      </View>
-    </SafeAreaView>
+    <Container>
+      <SafeAreaView>
+        <ScrollView>
+          <Header />
+          <Text>Hello Home</Text>
+        </ScrollView>
+      </SafeAreaView>
+    </Container>
   );
 }
 
-export default App;
+export default Home;
