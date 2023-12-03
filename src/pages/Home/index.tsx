@@ -4,7 +4,7 @@ import {SafeAreaView, ScrollView, Text} from 'react-native';
 import Header from './../../components/Header';
 
 import {Container} from './styles';
-import Card from '../../components/Header/Card';
+import Card from '../../components/Card';
 
 function Home(): JSX.Element {
   return (
