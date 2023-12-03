@@ -1,5 +1,10 @@
 import styled from 'styled-components/native';
 
+export const CardContainer = styled.View`
+  flex: 1;
+  width: 100%;
+`;
+
 export const Content = styled.View`
   flex: 1;
   align-items: center;
@@ -8,6 +13,8 @@ export const Content = styled.View`
   border-radius: 8px;
   margin: 12px;
   padding: 16px;
+  min-height: 70px;
+  height: 70px;
 `;
 
 export const Avatar = styled.Image`

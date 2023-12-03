@@ -9,7 +9,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import {SharedElement} from 'react-navigation-shared-element';
 
-import {Content, Avatar, Title} from './styles';
+import {Content, Avatar, Title, CardContainer} from './styles';
 
 function Card({character}: any) {
   const navigation = useNavigation<StackNavigationProp<any>>();
@@ -25,16 +25,19 @@ function Card({character}: any) {
     offset.value = 100;
   }, []);
   return (
-    <TouchableOpacity onPress={() => navigation.push('Character', {character})}>
-      <Animated.View style={animatedStyles}>
-        <Content>
-          <SharedElement id={`ram.${character.id}.photo`}>
-            <Avatar source={{uri: character.image}} />
-          </SharedElement>
-          <Title>{character.name}</Title>
-        </Content>
-      </Animated.View>
-    </TouchableOpacity>
+    <CardContainer>
+      <TouchableOpacity
+        onPress={() => navigation.push('Character', {character})}>
+        <Animated.View style={animatedStyles}>
+          <Content>
+            <SharedElement id={`ram.${character.id}.photo`}>
+              <Avatar source={{uri: character.image}} />
+            </SharedElement>
+            <Title>{character.name}</Title>
+          </Content>
+        </Animated.View>
+      </TouchableOpacity>
+    </CardContainer>
   );
 }
 

@@ -1,13 +1,12 @@
 import {Dimensions} from 'react-native';
 import styled from 'styled-components/native';
 
-export const Header = styled.View`
-  flex: 1;
-  width: ${Dimensions.get('window').width};
+export const HeaderContainer = styled.View`
+  width: ${Dimensions.get('window').width}px;
   align-items: center;
 `;
 
 export const Logo = styled.Image`
-  width: ${Dimensions.get('window').width * 0.7};
+  width: ${Dimensions.get('window').width * 0.7}px;
   height: 120px;
 `;

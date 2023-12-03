@@ -1,16 +1,16 @@
 import React from 'react';
 
-import {Header, Logo} from './styles';
+import {HeaderContainer, Logo} from './styles';
 
-function Home(): JSX.Element {
+function Header(): JSX.Element {
   return (
-    <Header>
+    <HeaderContainer>
       <Logo
         source={require('../../assets/images/logo.png')}
         resizeMode="contain"
       />
-    </Header>
+    </HeaderContainer>
   );
 }
 
-export default Home;
+export default Header;
