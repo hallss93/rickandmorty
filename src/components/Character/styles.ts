@@ -15,5 +15,18 @@ export const Title = styled.Text`
   color: #fff;
   font-weight: 500;
   font-size: 24px;
-  margin: 16px;
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+`;
+
+export const Gender = styled(Title)`
+  margin-top: 0px;
+  font-weight: 500;
+  font-size: 16px;
+`;
+
+export const Status = styled(Gender)`
+  font-weight: 400;
+  font-size: 16px;
 `;

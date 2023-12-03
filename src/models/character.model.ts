@@ -5,5 +5,7 @@ export interface CharacterData {
 export interface CharacterResult {
   id: string;
   name: string;
+  gender: string;
+  status: string;
   image: string;
 }
